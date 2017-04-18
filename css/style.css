@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(http://zaz-dnepr.org.ua/images/bg.png);
+	background-color: #cccccc;
+}
+.body__main {
+
+}
+.body__main__page {
+	background-color: black;
+	width: 100%;
+}
