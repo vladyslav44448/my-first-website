@@ -7,6 +7,8 @@ body {
 .app__main {
 	width: 1020px;
 	margin: 0 auto;
+	box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.67);
+
 }
 .app__main__header {
 	height: 202px;
@@ -15,6 +17,7 @@ body {
 .app__main__header-logo,
 .app__main__header-promo {
 	float: left;
+	height: 100%;
 }
 .app__main__header-promo {
 	width: calc(100% - 249px);
@@ -48,4 +51,44 @@ body {
 	opacity: 0.3;
 	border-radius: 3px;
 	border: 1px solid #b3b3b3;
+}
+.app__main__body {
+	display: flex;
+}
+.app__main__body-sidebar,
+.app__main__body-content {
+	float: left;
+}
+.app__main__body-sidebar {
+	width: 199px;
+}
+.app__main__body-sidebar__list {
+background-image: url(http://zaz-dnepr.org.ua/images/menu_bg.png);
+margin: 0;
+padding: 0 10px;
+list-style: none;
+}
+.app__main__body-sidebar__list-item {
+	margin-top: 4px;
+}
+.app__main__body-sidebar__list-item:first-child {
+	margin-top: 0;
+}
+.app__main__body-sidebar__list-item__block {
+	display: flex;
+}
+.app__main__body-sidebar__list-item__block * {
+	height: 100%;
+}
+.app__main__body-sidebar__list-item__block span {
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: bold;
+	padding-left: 5px;
+	background-position: 0 4px;
+
+}
+.app__main__body-sidebar__list-item__block span:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
