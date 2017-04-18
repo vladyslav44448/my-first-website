@@ -4,10 +4,48 @@ body {
 	background-image: url(http://zaz-dnepr.org.ua/images/bg.png);
 	background-color: #cccccc;
 }
-.body__main {
-
+.app__main {
+	width: 1020px;
+	margin: 0 auto;
 }
-.body__main__page {
-	background-color: black;
-	width: 100%;
+.app__main__header {
+	height: 202px;
+	background: url(http://zaz-dnepr.org.ua/images/top_bg.png);
+}
+.app__main__header-logo,
+.app__main__header-promo {
+	float: left;
+}
+.app__main__header-promo {
+	width: calc(100% - 249px);
+}
+.app__main__header-promo__paragarph {
+	display: block;
+	height: 15px;
+	padding: 10px 0;
+	font-weight: 700;
+	text-align: center;
+	margin-right: -146px;
+}
+.app__main__header-promo__list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.app__main__header-promo__list-item {
+	display: inline;
+}
+.app__main__header-promo__list-item:nth-child(even) {
+	padding: 12px;
+}
+.app__main__header-promo__name {
+	margin-top: -44px;
+}
+.app__main__header-promo__search {
+	float: right;
+	position: relative;
+	right: 155px;
+	opacity: 0.3;
+	border-radius: 3px;
+	border: 1px solid #b3b3b3;
 }
