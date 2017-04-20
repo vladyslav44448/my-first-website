@@ -92,3 +92,37 @@ list-style: none;
 	cursor: pointer;
 	text-decoration: underline;
 }
+.app__main__body-content {
+	width: calc(100% - 160px);
+	background: #f9f9f9;
+
+}
+.app__main__body-content__welcometext {
+	text-align: center;
+	color: #3b5998;
+	font-family: Tahoma;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 15px 0 20px 0;
+}
+.app__main__body-content__empty {
+	width: 803px;
+	height: 30px;
+}
+.app__main__body-content__menu {
+	padding: 18px;
+	font-size: 13px;
+}
+.app__main__body-content__menu h3 {
+	margin: 18px 0;
+	font-size: 1.17em;
+}
+.app__main__body-content__menu a {
+	margin: 27px 27px 0 0;
+	color: #3B5998;
+	border-bottom: 1px #3b5998 dashed;
+	text-decoration: none;
+}
+.app__main__body-content__menu a:hover {
+	border-bottom: 1px #3b5998 solid;
+}
