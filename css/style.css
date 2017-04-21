@@ -4,24 +4,61 @@ body {
 	background-image: url(http://zaz-dnepr.org.ua/images/bg.png);
 	background-color: #cccccc;
 }
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.myBtn {
+	text-decoration: none;
+	color: #000000;
+	padding: 10px;
+	/*background: tra;*/
+	font-size: 13px;
+	line-height: 34px;
+	margin: 10px;
+	/*border-radius: 5px;*/
+	border: 1px solid #55b0ff;
+	transition: all 0.5s;
+}
+
+.myBtn:hover {
+	cursor: pointer;
+	/*color: yellow;*/
+	background: #edf9ff;
+	border-radius: 10px;
+	font-size: 16px;
+	/*padding: 6px;*/
+}
+
+.center {
+	text-align: center;
+}
+
 .app__main {
 	width: 1020px;
 	margin: 0 auto;
 	box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.67);
 
 }
+
 .app__main__header {
 	height: 202px;
 	background: url(http://zaz-dnepr.org.ua/images/top_bg.png);
 }
+
 .app__main__header-logo,
 .app__main__header-promo {
 	float: left;
 	height: 100%;
 }
+
 .app__main__header-promo {
 	width: calc(100% - 249px);
 }
+
 .app__main__header-promo__paragarph {
 	display: block;
 	height: 15px;
@@ -30,20 +67,25 @@ body {
 	text-align: center;
 	margin-right: -146px;
 }
+
 .app__main__header-promo__list{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+
 .app__main__header-promo__list-item {
 	display: inline;
 }
+
 .app__main__header-promo__list-item:nth-child(even) {
 	padding: 12px;
 }
+
 .app__main__header-promo__name {
 	margin-top: -44px;
 }
+
 .app__main__header-promo__search {
 	float: right;
 	position: relative;
@@ -52,77 +94,145 @@ body {
 	border-radius: 3px;
 	border: 1px solid #b3b3b3;
 }
+
 .app__main__body {
 	display: flex;
 }
-.app__main__body-sidebar,
-.app__main__body-content {
-	float: left;
-}
+
 .app__main__body-sidebar {
 	width: 199px;
 }
+
 .app__main__body-sidebar__list {
-background-image: url(http://zaz-dnepr.org.ua/images/menu_bg.png);
-margin: 0;
-padding: 0 10px;
-list-style: none;
+	background-image: url(http://zaz-dnepr.org.ua/images/menu_bg.png);
+	margin: 0;
+	padding: 0 10px;
+	list-style: none;
+	height: 100%;
 }
+
 .app__main__body-sidebar__list-item {
 	margin-top: 4px;
 }
+
 .app__main__body-sidebar__list-item:first-child {
 	margin-top: 0;
 }
+
 .app__main__body-sidebar__list-item__block {
 	display: flex;
 }
+
 .app__main__body-sidebar__list-item__block * {
 	height: 100%;
 }
+
 .app__main__body-sidebar__list-item__block span {
 	font-size: 12px;
 	font-family: Arial;
 	font-weight: bold;
 	padding-left: 5px;
 	background-position: 0 4px;
-
 }
+
 .app__main__body-sidebar__list-item__block span:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
-.app__main__body-content {
-	width: calc(100% - 160px);
-	background: #f9f9f9;
 
+.app__main__body-content {
+	width: calc(100% - 199px);
+	background: #f9f9f9;
 }
+
+.app__main__body-content-box {
+	border-bottom: 2px dashed #cccccc;
+	margin: 0 20px 20px 15px;
+}
+
 .app__main__body-content__welcometext {
-	text-align: center;
 	color: #3b5998;
 	font-family: Tahoma;
 	font-size: 20px;
 	font-weight: normal;
-	margin: 15px 0 20px 0;
+	margin: 15px 0 50px 0;
 }
-.app__main__body-content__empty {
-	width: 803px;
-	height: 30px;
-}
+
 .app__main__body-content__menu {
 	padding: 18px;
+	font-family: Arial;
 	font-size: 13px;
 }
+
 .app__main__body-content__menu h3 {
 	margin: 18px 0;
 	font-size: 1.17em;
+	font-weight: bold;
 }
+
 .app__main__body-content__menu a {
 	margin: 27px 27px 0 0;
 	color: #3B5998;
 	border-bottom: 1px #3b5998 dashed;
 	text-decoration: none;
 }
+
 .app__main__body-content__menu a:hover {
 	border-bottom: 1px #3b5998 solid;
+}
+
+.app__main__body-content__menu-info {
+	margin-left: 10px;
+	padding: 0 10px 0 8px;
+	font-family: Arial;
+	font-size: 13px;
+	margin-top: 2px;
+	margin-bottom: 42px;
+	text-align: left;
+}
+
+.app__main__body-content__menu-photos__list {
+	list-style: none;
+	margin: 0 12px 35px 12px;
+
+}
+
+.app__main__body-content__menu-photos__list-item {
+	display: inline-flex;
+	margin: 15px;
+	border: 1px transparent solid;
+	padding: 2px;
+	transition: border 0.5s;
+}
+
+.app__main__body-content__menu-photos__list-item:hover {
+	border: 1px #cccccc solid;
+	cursor: pointer;
+}
+
+.app__main__body-content__menu-photos__showall {
+	margin-bottom: 20px;
+}
+
+.app__main__body-content__menu-refer {
+	margin-bottom: 30px;
+}
+
+.app__main__body-content__menu-refer__list {
+
+}
+
+.app__main__body-content__menu-refer__list-item {
+	display: inline-block;
+
+}
+
+.app__main__body-content__menu-refer__list-item img {
+	height: 30px;
+}
+
+.app__main__body-content__menu-refer__list-item__text {
+	width: 400px;
+	padding-left: 10px;
+	text-align: left;
 }
