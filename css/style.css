@@ -236,3 +236,52 @@ ul, ol {
 	padding-left: 10px;
 	text-align: left;
 }
+
+.footer {
+	display: inline-flex;
+	width: 100%;
+	bottom: 0;
+	height: 50px;
+	-webkit-box-shadow: inset 0px 0px 41px -6px rgba(75,98,209,1);
+	-moz-box-shadow: inset 0px 0px 41px -6px rgba(75,98,209,1);
+	box-shadow: inset 0px 0px 41px -6px rgba(75,98,209,1);
+	background: rgba(67,230,91,1);
+  background: -moz-linear-gradient(top, rgba(67,230,91,1) 0%, rgba(67,230,91,1) 46%, rgba(210,255,82,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(67,230,91,1)), color-stop(46%, rgba(67,230,91,1)), color-stop(100%, rgba(210,255,82,1)));
+  background: -webkit-linear-gradient(top, rgba(67,230,91,1) 0%, rgba(67,230,91,1) 46%, rgba(210,255,82,1) 100%);
+  background: -o-linear-gradient(top, rgba(67,230,91,1) 0%, rgba(67,230,91,1) 46%, rgba(210,255,82,1) 100%);
+  background: -ms-linear-gradient(top, rgba(67,230,91,1) 0%, rgba(67,230,91,1) 46%, rgba(210,255,82,1) 100%);
+  background: linear-gradient(to bottom, rgba(67,230,91,1) 0%, rgba(67,230,91,1) 46%, rgba(210,255,82,1) 100%);
+}
+
+.footer ul {
+	display: inline-flex;
+}
+
+.footer img {
+	padding-right: 5px;
+}
+
+.footer__list-1part {
+	width: 380px;
+	padding: 10px;
+	margin: 0 75px 0 75px;
+}
+
+.footer__list-2part {
+	width: 173px;
+	padding: 10px;
+}
+
+.footer__list-3part {
+	width: 277px;
+	text-align: right;
+	padding: 5px;
+	font-family: Arial;
+	font-size: 11px;
+	color: #555555
+}
+
+.footer__list-3part a:hover {
+	color: black;
+}
